@@ -104,19 +104,15 @@ html, body {
 }
 
 .container {
-	@media only screen and (max-width: 500px) {
-		h1 {
-			font-size: 4rem;
-		}
 	}
 	.container-max-width();
 	.margin-auto();
 	background-color: #eaf4ff;
 	border: 1px solid grey;
 	h1 {
-		@media only screen and (max-width: 500px) {
-			font-size: 4rem;
-		}
+	@media only screen and (max-width: 500px) {
+		font-size: 4rem;
+	}
 		font-size: 10rem;
 		font-family: 'Vibur', cursive;
 	}
@@ -132,6 +128,7 @@ html, body {
 		font-size: 2rem;
 		font-family: 'Vibur', cursive;
 	}
+
 	header {
 		@media only screen and (max-width: 500px) {
 			.flex();
@@ -145,7 +142,7 @@ html, body {
 		border-bottom: 1px solid grey;
 		.logo {
 			@media only screen and (max-width: 500px) {
-				margin: 0 auto;
+				.margin-auto();
 			}
 			color: red;
 			text-decoration: none;
@@ -170,9 +167,6 @@ html, body {
 				font-size: 1.2rem;
 				text-decoration: none;
 				color: black;
-				// &:last-child {
-				// 	padding: 0 0 0 20px;
-				// }
 				&:hover {
 					color: blue;
 				}
@@ -214,6 +208,9 @@ html, body {
 			}
 		}
 		.profile {
+			@media only screen and (max-width: 500px) {
+				margin-top: 20px;
+			}
 			width: 70%;
 			.profile-info {
 				font-size: 1.2rem;
@@ -225,6 +222,9 @@ html, body {
 	.experiences {
 		padding: 50px 5%;
 		.job-logo {
+			@media only screen and (max-width: 500px) {
+				display: none;
+			}
 			width: 360px;
 		}
 		.job-xp {
@@ -253,6 +253,7 @@ html, body {
 		}
 		.flex();
 		padding: 0px 5%;
+		margin-bottom: 50px;
 		.skills {
 			width: 30%;
 			.skills-info {
@@ -262,6 +263,9 @@ html, body {
 			}
 		}
 		.education {
+			@media only screen and (max-width: 500px) {
+				margin-top: 20px;
+			}
 			width: 70%;
 			.education-xp {
 				margin-top: 20px;

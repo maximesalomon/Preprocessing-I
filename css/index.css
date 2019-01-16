@@ -153,11 +153,6 @@ body {
   font-size: 10rem;
   font-family: 'Vibur', cursive;
 }
-@media only screen and (max-width: 500px) {
-  .container h1 {
-    font-size: 4rem;
-  }
-}
 .container h2 {
   padding: 20px 0;
   font-size: 2.4rem;
@@ -264,6 +259,11 @@ body {
 .container .info .profile {
   width: 70%;
 }
+@media only screen and (max-width: 500px) {
+  .container .info .profile {
+    margin-top: 20px;
+  }
+}
 .container .info .profile .profile-info {
   font-size: 1.2rem;
   margin-top: 20px;
@@ -273,6 +273,11 @@ body {
 }
 .container .experiences .job-logo {
   width: 360px;
+}
+@media only screen and (max-width: 500px) {
+  .container .experiences .job-logo {
+    display: none;
+  }
 }
 .container .experiences .job-xp {
   display: flex;
@@ -294,6 +299,7 @@ body {
 .container .skills-education {
   display: flex;
   padding: 0px 5%;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 500px) {
   .container .skills-education {
@@ -311,6 +317,11 @@ body {
 }
 .container .skills-education .education {
   width: 70%;
+}
+@media only screen and (max-width: 500px) {
+  .container .skills-education .education {
+    margin-top: 20px;
+  }
 }
 .container .skills-education .education .education-xp {
   margin-top: 20px;
