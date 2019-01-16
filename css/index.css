@@ -135,16 +135,42 @@ html {
 html,
 body {
   height: 100%;
-  background-color: #f9fbff;
-  font-family: Helvetica;
+  background-color: #fff;
+  font-family: 'Lato', Helvetica;
 }
 .container {
   max-width: 960px;
   margin: 0 auto;
+  background-color: #eaf4ff;
   border: 1px solid grey;
+}
+@media only screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+}
+.container h1 {
+  font-size: 10rem;
+  font-family: 'Vibur', cursive;
+}
+@media only screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+}
+.container h2 {
+  padding: 20px 0;
+  font-size: 2rem;
+  font-family: 'Lato';
+}
+@media only screen and (max-width: 500px) {
+  .container h2 {
+    font-size: 1.6rem;
+  }
 }
 .container h3 {
   font-size: 2rem;
+  font-family: 'Vibur', cursive;
 }
 .container header {
   display: flex;
@@ -152,25 +178,48 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid grey;
 }
+@media only screen and (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0;
+  }
+}
 .container header .logo {
   color: red;
   text-decoration: none;
   font-size: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .container header .logo {
+    margin: 0 auto;
+  }
 }
 .container header nav {
   display: flex;
   width: 700px;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .container header nav a {
   display: flex;
+  margin-top: 10px;
   padding: 0 20px 0 20px;
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
-.container header nav a:last-child {
-  padding: 0 0 0 20px;
+@media only screen and (max-width: 500px) {
+  .container header nav a {
+    margin: 10px auto;
+  }
 }
 .container header nav a:hover {
   color: blue;
@@ -179,39 +228,51 @@ body {
   display: flex;
   padding: 50px 5%;
 }
+@media only screen and (max-width: 500px) {
+  .container .intro {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .container .intro .profile-picture {
+    margin: 20px auto;
+  }
+  .container .intro .name-job-title {
+    padding: 0;
+  }
+}
 .container .intro .name-job-title {
   padding: 20px 20px 20px 100px;
-}
-.container .intro .name-job-title h1 {
-  font-size: 6rem;
-}
-.container .intro .name-job-title h2 {
-  padding: 20px 0;
-  font-size: 2rem;
 }
 .container .info {
   display: flex;
   padding: 50px 5%;
+}
+@media only screen and (max-width: 500px) {
+  .container .info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .info .contact {
   width: 30%;
 }
 .container .info .contact .contact-info {
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .container .info .profile {
   width: 70%;
 }
 .container .info .profile .profile-info {
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .container .experiences {
   padding: 50px 5%;
 }
 .container .experiences .job-xp {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .container .experiences .job-xp .job-title {
   font-size: 1.7rem;
@@ -224,5 +285,38 @@ body {
 }
 .container .experiences .job-xp .job-details {
   font-size: 1.2rem;
+  padding: 2px 0;
+}
+.container .skills-education {
+  display: flex;
+  padding: 50px 5%;
+}
+@media only screen and (max-width: 500px) {
+  .container .skills-education {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .skills-education .skills {
+  width: 30%;
+}
+.container .skills-education .skills .skills-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 2px 0;
+}
+.container .skills-education .education {
+  width: 70%;
+}
+.container .skills-education .education .education-xp {
+  margin-top: 20px;
+}
+.container .skills-education .education .education-xp .education-title {
+  font-size: 1.7rem;
+  padding: 2px 0;
+}
+.container .skills-education .education .education-xp .education-info {
+  font-size: 1.3rem;
+  font-style: italic;
   padding: 2px 0;
 }

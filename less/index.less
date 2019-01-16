@@ -59,6 +59,10 @@ table {
 	max-width: 960px;
 }
 
+.mobile-max-width() {
+	max-width: 480px;
+}
+
 .margin-auto() {
 	margin: 0 auto;
 }
@@ -75,11 +79,11 @@ table {
 
 // Colors
 
-@bg-color: #f9fbff;
+@bg-color: #fff;
 
 // Fonts
 
-@font-stack: Helvetica;
+@font-stack: 'Lato', Helvetica;
 
 
 
@@ -100,35 +104,75 @@ html, body {
 }
 
 .container {
+	@media only screen and (max-width: 500px) {
+		h1 {
+			font-size: 4rem;
+		}
+	}
 	.container-max-width();
 	.margin-auto();
+	background-color: #eaf4ff;
 	border: 1px solid grey;
+	h1 {
+		@media only screen and (max-width: 500px) {
+			font-size: 4rem;
+		}
+		font-size: 10rem;
+		font-family: 'Vibur', cursive;
+	}
+	h2 {
+		@media only screen and (max-width: 500px) {
+			font-size: 1.6rem;
+		}
+		padding: 20px 0;
+		font-size: 2rem;
+		font-family: 'Lato';
+	}
 	h3 {
 		font-size: 2rem;
+		font-family: 'Vibur', cursive;
 	}
 	header {
+		@media only screen and (max-width: 500px) {
+			.flex();
+			flex-direction: column;
+			margin-top: 10px;
+			padding: 0;
+		}
 		.flex();
 		.justify(space-evenly);
 		padding: 20px 0;
 		border-bottom: 1px solid grey;
 		.logo {
+			@media only screen and (max-width: 500px) {
+				margin: 0 auto;
+			}
 			color: red;
 			text-decoration: none;
 			font-size: 2rem;
 		}
 		nav {
+			@media only screen and (max-width: 500px) {
+				.flex();
+				flex-direction: column;
+				width: 100%;
+			}
 			.flex();
 			width: 700px;
 			.justify(flex-end);
 			a {
+				@media only screen and (max-width: 500px) {
+					margin: 10px auto;
+				}
 				.flex();
+				margin-top: 10px;
 				padding: 0 20px 0 20px;
 				font-size: 1.2rem;
 				text-decoration: none;
 				color: black;
-				&:last-child {
-					padding: 0 0 0 20px;
-				}
+				// &:last-child {
+				// 	padding: 0 0 0 20px;
+				// }
 				&:hover {
 					color: blue;
 				}
@@ -137,37 +181,43 @@ html, body {
 	}
 
 	.intro {
+		@media only screen and (max-width: 500px) {
+			.flex();
+			flex-direction: column;
+			padding: 0;
+			.profile-picture {
+				margin: 20px auto;
+			}
+			.name-job-title {
+				padding: 0;
+			}
+		}
 		.flex();
 		padding: 50px 5%;
-		.profile-picture {
-		}
 		.name-job-title {
 			padding: 20px 20px 20px 100px;
-			h1 {
-				font-size: 6rem;
-			}
-			h2 {
-				padding: 20px 0;
-				font-size: 2rem;
-			}
 		}
 	}
 
 	.info {
+		@media only screen and (max-width: 500px) {
+			.flex();
+			flex-direction: column;
+		}
 		.flex();
 		padding: 50px 5%;
 		.contact {
 			width: 30%;
 			.contact-info {
 				font-size: 1.2rem;
-				margin-top: 10px;
+				margin-top: 20px;
 			}
 		}
 		.profile {
 			width: 70%;
 			.profile-info {
 				font-size: 1.2rem;
-				margin-top: 10px;
+				margin-top: 20px;
 			}
 		}
 	}
@@ -175,7 +225,7 @@ html, body {
 	.experiences {
 		padding: 50px 5%;
 		.job-xp {
-			margin-top: 30px;
+			margin-top: 20px;
 			.job-title {
 				font-size: 1.7rem;
 				padding: 2px 0;
@@ -188,6 +238,39 @@ html, body {
 			.job-details {
 				font-size: 1.2rem;
 				padding: 2px 0;
+			}
+		}
+	}
+
+	.skills-education {
+		@media only screen and (max-width: 500px) {
+			.flex();
+			flex-direction: column;
+		}
+		.flex();
+		padding: 50px 5%;
+		.skills {
+			width: 30%;
+			.skills-info {
+				margin-top: 20px;
+				font-size: 1.2rem;
+				padding: 2px 0;
+			}
+		}
+		.education {
+			width: 70%;
+			.education-xp {
+				margin-top: 20px;
+				.education-title {
+					font-size: 1.7rem;
+					padding: 2px 0;
+				}
+				.education-info {
+					font-size: 1.3rem;
+					font-style: italic;
+					padding: 2px 0;
+				}
+
 			}
 		}
 	}
