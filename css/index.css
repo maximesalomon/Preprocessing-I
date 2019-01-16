@@ -126,18 +126,43 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
+  background-color: #f9fbff;
+  font-family: Helvetica;
 }
 .container {
-  max-width: 880px;
+  max-width: 960px;
   margin: 0 auto;
 }
-header {
+.container header {
   display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  border: 1px solid grey;
+}
+.container header .logo {
+  color: red;
+  text-decoration: none;
+}
+.container header nav {
+  display: flex;
+  width: 700px;
+  justify-content: flex-end;
+}
+.container header nav a {
+  display: flex;
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+  color: black;
+}
+.container header nav a:last-child {
+  padding: 0 0 0 20px;
+}
+.container header nav a:hover {
+  color: blue;
 }

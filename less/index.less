@@ -48,21 +48,82 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+///////////////////////////////////////////////////////////
+// STYLE //
+///////////////////////////////////////////////////////////
+
+// LESSS //
+
+// MIXINS
+.container-max-width() {
+	max-width: 960px;
+}
+
+.margin-auto() {
+	margin: 0 auto;
+}
+
+.flex() {
+	display: flex;
+}
+
+.justify(@arg) {
+	justify-content: @arg;
+}
+
+// VARIABLES
+
+// Colors
+
+@bg-color: #f9fbff;
+
+// Fonts
+
+@font-stack: Helvetica;
+
+
+
+///////////////////////////////////////////////////////////
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
+	background-color: @bg-color;
+	font-family: @font-stack;
 }
 
 .container {
-	max-width: 880px;
-	margin: 0 auto;
-}
-
-header {
-	display: flex;
+	.container-max-width();
+	.margin-auto();
+	header {
+		.flex();
+		.justify(space-evenly);
+		padding: 20px 0;
+		border: 1px solid grey;
+		.logo {
+			color: red;
+			text-decoration: none;
+		}
+		nav {
+			.flex();
+			width: 700px;
+			.justify(flex-end);
+			a {
+				.flex();
+				padding: 0 20px 0 20px;
+				text-decoration: none;
+				color: black;
+				&:last-child {
+					padding: 0 0 0 20px;
+				}
+				&:hover {
+					color: blue;
+				}
+			}
+		}
+	}
 }
 
