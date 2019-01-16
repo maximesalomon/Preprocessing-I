@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -138,16 +141,18 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  border: 1px solid grey;
 }
 .container header {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 0;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 .container header .logo {
   color: red;
   text-decoration: none;
+  font-size: 2rem;
 }
 .container header nav {
   display: flex;
@@ -157,6 +162,7 @@ body {
 .container header nav a {
   display: flex;
   padding: 0 20px 0 20px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
@@ -165,4 +171,22 @@ body {
 }
 .container header nav a:hover {
   color: blue;
+}
+.container .intro {
+  display: flex;
+  padding: 50px 0;
+}
+.container .intro .profile-picture {
+  margin: 0 0 0 10%;
+}
+.container .intro .info {
+  margin: 0 0 0 10%;
+  padding: 20px;
+}
+.container .intro .info h1 {
+  font-size: 6rem;
+}
+.container .intro .info h2 {
+  padding: 20px 0;
+  font-size: 2rem;
 }

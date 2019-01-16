@@ -89,6 +89,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
 	height: 100%;
 	background-color: @bg-color;
@@ -98,14 +102,16 @@ html, body {
 .container {
 	.container-max-width();
 	.margin-auto();
+	border: 1px solid grey;
 	header {
 		.flex();
 		.justify(space-evenly);
 		padding: 20px 0;
-		border: 1px solid grey;
+		border-bottom: 1px solid grey;
 		.logo {
 			color: red;
 			text-decoration: none;
+			font-size: 2rem;
 		}
 		nav {
 			.flex();
@@ -114,6 +120,7 @@ html, body {
 			a {
 				.flex();
 				padding: 0 20px 0 20px;
+				font-size: 1.2rem;
 				text-decoration: none;
 				color: black;
 				&:last-child {
@@ -122,6 +129,25 @@ html, body {
 				&:hover {
 					color: blue;
 				}
+			}
+		}
+	}
+
+	.intro {
+		.flex();
+		padding: 50px 0;
+		.profile-picture {
+			margin: 0 0 0 10%;
+		}
+		.info {
+			margin: 0 0 0 10%;
+			padding: 20px;
+			h1 {
+				font-size: 6rem;
+			}
+			h2 {
+				padding: 20px 0;
+				font-size: 2rem;
 			}
 		}
 	}
