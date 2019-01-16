@@ -134,3 +134,10 @@ html,
 body {
   height: 100%;
 }
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+}
