@@ -174,19 +174,36 @@ body {
 }
 .container .intro {
   display: flex;
-  padding: 50px 0;
+  padding: 50px 5%;
 }
-.container .intro .profile-picture {
-  margin: 0 0 0 10%;
+.container .intro .name-job-title {
+  padding: 20px 20px 20px 100px;
 }
-.container .intro .info {
-  margin: 0 0 0 10%;
-  padding: 20px;
-}
-.container .intro .info h1 {
+.container .intro .name-job-title h1 {
   font-size: 6rem;
 }
-.container .intro .info h2 {
+.container .intro .name-job-title h2 {
   padding: 20px 0;
   font-size: 2rem;
+}
+.container .info {
+  display: flex;
+  padding: 50px 5%;
+}
+.container .info h3 {
+  font-size: 2rem;
+}
+.container .info .contact {
+  width: 30%;
+}
+.container .info .contact .contact-info {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.container .info .profile {
+  width: 70%;
+}
+.container .info .profile .profile-info {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
