@@ -143,6 +143,9 @@ body {
   margin: 0 auto;
   border: 1px solid grey;
 }
+.container h3 {
+  font-size: 2rem;
+}
 .container header {
   display: flex;
   justify-content: space-evenly;
@@ -190,9 +193,6 @@ body {
   display: flex;
   padding: 50px 5%;
 }
-.container .info h3 {
-  font-size: 2rem;
-}
 .container .info .contact {
   width: 30%;
 }
@@ -206,4 +206,23 @@ body {
 .container .info .profile .profile-info {
   font-size: 1.2rem;
   margin-top: 10px;
+}
+.container .experiences {
+  padding: 50px 5%;
+}
+.container .experiences .job-xp {
+  margin-top: 30px;
+}
+.container .experiences .job-xp .job-title {
+  font-size: 1.7rem;
+  padding: 2px 0;
+}
+.container .experiences .job-xp .job-info {
+  font-size: 1.3rem;
+  font-style: italic;
+  padding: 2px 0;
+}
+.container .experiences .job-xp .job-details {
+  font-size: 1.2rem;
+  padding: 2px 0;
 }
